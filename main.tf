@@ -9,7 +9,7 @@ resource "aws_instance" "my_ec2" {
   instance_type = "t2.micro"
   key_name      = "TIER1" # Replace with your SSH key name
 
-  security_groups = [aws_security_group.allow_ssh.name]
+
 
   tags = {
     Name = "MyEC2Instance"
